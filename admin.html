@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin</title>
+    <style>
+        /* Style for the dropdown menu */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        /* Centered text */
+        .centered-text {
+            text-align: center;
+            margin-top: 100px; /* Adjust as needed to position the text vertically */
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu icon -->
+    <div class="dropdown">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrFhOWC-neSb13FCQG6w1RdhU5tHgXajEO4A&usqp=CAU" alt="Menu" width="30" height="30" id="menu-icon">
+        <div class="dropdown-content" id="menu-content">
+            <a href="#">Dashboard</a>
+            <a href="#">Appointments</a>
+            <a href="#">Patient</a>
+            <a href="#">Doctors</a>
+        </div>
+    </div>
+
+    <!-- Centered text -->
+    <div class="centered-text">
+        <h1>Welcome to the Admin Page</h1>
+        <p>This is the admin dashboard.</p>
+    </div>
+
+    <script>
+        // JavaScript to toggle the menu when the icon is clicked
+        const menuIcon = document.getElementById('menu-icon');
+        const menuContent = document.getElementById('menu-content');
+
+        menuIcon.addEventListener('click', () => {
+            if (menuContent.style.display === 'block') {
+                menuContent.style.display = 'none';
+            } else {
+                menuContent.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>

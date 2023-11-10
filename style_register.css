@@ -1,0 +1,16 @@
+.empty-input {
+    border: 2px solid red; /* You can customize the style for empty inputs */
+}
+/* input{
+    border: 1px solid blue;
+} */
+
+.div1 {  
+    display: inline-block;
+    vertical-align: top;
+}
+
+.div1 input {
+    display: block;
+    margin-bottom: 10px; /* Adjust the margin as needed for spacing */
+}
